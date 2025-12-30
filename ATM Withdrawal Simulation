@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int balance=10000,n;
+    printf("Enter the amount:");
+    scanf("%d",&n);
+    if(n>0){
+        if(balance>=n){
+            balance-=n;
+            printf("%d",balance);
+        }else if(n>balance){
+            printf("Insufficient balance");
+        }
+        }else if(n<0){
+            printf("Invalid amount message");
+    }
+}
